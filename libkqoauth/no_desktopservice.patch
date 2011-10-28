@@ -1,0 +1,59 @@
+diff -up ../../kqoauth/src//kqoauthmanager.cpp ./kqoauthmanager.cpp
+--- ../../kqoauth/src//kqoauthmanager.cpp	2011-10-22 22:23:12.391025442 +0200
++++ ./kqoauthmanager.cpp	2011-10-22 22:44:06.897246201 +0200
+@@ -18,7 +18,6 @@
+  *  along with KQOAuth.  If not, see <http://www.gnu.org/licenses/>.
+  */
+ #include <QtCore>
+-#include <QDesktopServices>
+ 
+ #include "kqoauthmanager.h"
+ #include "kqoauthmanager_p.h"
+@@ -401,19 +400,19 @@ QNetworkAccessManager * KQOAuthManager::
+ 
+ //////////// Public convenience API /////////////
+ 
+-void KQOAuthManager::getUserAuthorization(QUrl authorizationEndpoint) {
++QUrl KQOAuthManager::getUserAuthorization(QUrl authorizationEndpoint) {
+     Q_D(KQOAuthManager);
+ 
+     if (!d->hasTemporaryToken) {
+         qWarning() << "No temporary tokens retreieved. Cannot get user authorization.";
+         d->error = KQOAuthManager::RequestUnauthorized;
+-        return;
++        return QString();
+     }
+ 
+     if (!authorizationEndpoint.isValid()) {
+         qWarning() << "Authorization endpoint not valid. Cannot proceed.";
+         d->error = KQOAuthManager::RequestEndpointError;
+-        return;
++        return QString();
+     }
+ 
+     d->error = KQOAuthManager::NoError;
+@@ -422,9 +421,9 @@ void KQOAuthManager::getUserAuthorizatio
+     QUrl openWebPageUrl(authorizationEndpoint.toString(), QUrl::StrictMode);
+     openWebPageUrl.addQueryItem(tokenParam.first, tokenParam.second);
+ 
+-    // Open the user's default browser to the resource authorization page provided
+-    // by the service.
+-    QDesktopServices::openUrl(openWebPageUrl);
++    // Return the resource authorization page provided by the service.
++    qDebug() << "KQOAuthManager::getUserAuthorization " << openWebPageUrl;
++    return openWebPageUrl;
+ }
+ 
+ void KQOAuthManager::getUserAccessTokens(QUrl accessTokenEndpoint) {
+diff -up ../../kqoauth/src//kqoauthmanager.h ./kqoauthmanager.h
+--- ../../kqoauth/src//kqoauthmanager.h	2011-10-22 22:23:12.391025442 +0200
++++ ./kqoauthmanager.h	2011-10-22 22:39:48.715965943 +0200
+@@ -103,7 +103,7 @@ public:
+      * us to access protected resources, the verifier token is stored in KQOAuthManager for further use.
+      * In order to use this method, you must set setHandleUserAuthorization() to true.
+      */
+-    void getUserAuthorization(QUrl authorizationEndpoint);
++    QUrl getUserAuthorization(QUrl authorizationEndpoint);
+     /**
+      * This is a convenience API for retrieving the access token in exchange for the temporary token and the
+      * verifier.
