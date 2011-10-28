@@ -22,3 +22,4 @@ SOURCES += libkqoauth/kqoauthauthreplyserver.cpp \
            libkqoauth/kqoauthrequest_xauth.cpp \
            libkqoauth/kqoauthutils.cpp
 
+OTHER_FILES += libkqoauth/no_desktopservice.patch

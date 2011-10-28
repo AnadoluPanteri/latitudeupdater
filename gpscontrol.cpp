@@ -122,6 +122,12 @@ unsigned int GpsControl::getCurrentTimestamp() {
     return GpsPosition.timestamp().toTime_t();
 }
 
+unsigned int GpsControl::getCount() {
+    qDebug() << "* GpsControl::getCount";
+    static unsigned int i = 0;
+    return ++i;
+}
+
 void GpsControl::setCurrentLocation(QGeoPositionInfo pos) {
     qDebug() << "* GpsControl::setCurrentLocation" << pos;
     if (pos.isValid()) {

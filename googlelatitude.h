@@ -21,8 +21,6 @@ public slots:
     QUrl getUserAuthorization();
     void setAutoConnect(bool status);
     bool getAutoConnect();
-    void setDaemonMode(bool status);
-    bool getDaemonMode();
 
 private slots:
     void onTemporaryTokenReceived(QString temporaryToken, QString temporaryTokenSecret);

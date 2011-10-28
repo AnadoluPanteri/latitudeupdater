@@ -144,16 +144,6 @@ bool GoogleLatitude::getAutoConnect() {
     return OauthSettings.value("net_auto", true).toBool();
 }
 
-void GoogleLatitude::setDaemonMode(bool status) {
-    qDebug() << "* GoogleLatitude::setDaemonMode" << status;
-    OauthSettings.setValue("daemon", status);
-}
-
-bool GoogleLatitude::getDaemonMode() {
-    qDebug() << "* GoogleLatitude::getDaemonMode";
-    return OauthSettings.value("daemon", true).toBool();
-}
-
 void GoogleLatitude::onTemporaryTokenReceived(QString temporaryToken, QString temporaryTokenSecret) {
     qDebug() << "* GoogleLatitude::onTemporaryTokenReceived" << temporaryToken << temporaryTokenSecret;
     if( OauthManager->lastError() == KQOAuthManager::NoError) {

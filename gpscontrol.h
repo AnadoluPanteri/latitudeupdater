@@ -32,6 +32,7 @@ public slots:
     double getCurrentLongitude();
     double getCurrentAccuracy();
     unsigned int getCurrentTimestamp();
+    unsigned int getCount();
 
 private slots:
     void setCurrentLocation(QGeoPositionInfo pos);
