@@ -1,0 +1,38 @@
+This package was debianized by Rodrigo Linfati <rodrigo@linfati.cl> on
+Fri, 28 Oct 2011 16:29:21 +0200.
+
+It was downloaded from <http://www.linfati.com>
+
+Upstream Author(s):
+
+    Rodrigo Linfati <rodrigo@linfati.cl>
+
+Copyright:
+
+    Rodrigo Linfati <rodrigo@linfati.cl>
+
+License:
+
+    This package is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2 of the License, or (at your option) any later version.
+
+    This package is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this package; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+
+On Debian systems, the complete text of the GNU Lesser General
+Public License can be found in `/usr/share/common-licenses/LGPL'.
+
+The Debian packaging is (C) 2011, Rodrigo Linfati <rodrigo@linfati.cl> and
+is licensed under the GPL, see `/usr/share/common-licenses/GPL'.
+
+Thanks to:
+Joppu http://talk.maemo.org/member.php?u=24013
+http://talk.maemo.org/showpost.php?p=449435&postcount=83

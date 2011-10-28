@@ -1,0 +1,128 @@
+latitudeupdater (0.8.0) unstable; urgency=low
+  * Ovi Store
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Sun, 11 Sep 2011 19:01:01 +0200
+
+latitudeupdater (0.8.0) unstable; urgency=low
+  * Enable invoker
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Wed, 10 Aug 2011 19:48:00 +0200
+
+latitudeupdater (0.7-0) unstable; urgency=low
+  * OAuth Support
+  * Google Latitude 1.0 API Support
+  * QtMobility Support
+  * QGeoPositionInfoSourceMaemo5 Backport from QtMobility 1.2
+  * Qwidget gui for Fremantle
+  * QML gui for harmattan
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Thu, 21 Jul 2011 21:58:20 +0200
+
+latitudeupdater (0.6-2) unstable; urgency=low
+  * enable use of gps+cell
+  * fix the "start daemon" bug
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Thu, 27 Jan 2011 16:07:22 +0100
+
+latitudeupdater (0.6-1) unstable; urgency=low
+  * auto update setting for daemon, fix start at boot time, fix NaN in gps eph
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Wed, 26 Jan 2011 17:23:41 +0100
+
+latitudeupdater (0.6-0) unstable; urgency=low
+  * Daemon at boot time (default off)
+  * If not network, do not try to update
+  * Use of gps
+  * Max 120s for a fix, min of 5 in cell-mode and 15 in gps-mode, default 30s
+  * Updates between 1800s, min 300, max 3600
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Wed, 26 Jan 2011 16:32:34 +0100
+
+latitudeupdater (0.4-7) unstable; urgency=low
+  * fix maximal accuracy
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Tue, 25 Jan 2011 00:48:01 +0100
+
+latitudeupdater (0.4-6) unstable; urgency=low
+  * GUI for the daemon mode
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Sat, 22 Jan 2011 23:26:09 +0100
+
+latitudeupdater (0.4-5) unstable; urgency=low
+  * New daemon mode
+  * bugs fix
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Sat, 22 Jan 2011 18:51:23 +0100
+
+latitudeupdater (0.4-0) unstable; urgency=low
+  * Bump version
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Wed, 05 May 2010 16:14:00 +0200
+
+latitudeupdater (0.3-9) unstable; urgency=low
+  * Cleanup, preparation for pr1.2
+  * Now Google Location and Buzz
+  * TODO: geolocation on webkit
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Wed, 05 May 2010 16:05:51 +0200
+
+latitudeupdater (0.3-8) unstable; urgency=low
+  * Testing, minor bugs fix
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Sat, 02 Jan 2010 03:53:51 +0100
+
+latitudeupdater (0.3-7) unstable; urgency=low
+  * libqt4 -> diablo = OK, fremantle -> fail
+  * libqt4-maemo5 -> fremantle => OK
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Sat, 02 Jan 2010 03:40:22 +0100
+
+latitudeupdater (0.3-6) unstable; urgency=low
+  * test libqt4 + libqt4-maemo5
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Sat, 02 Jan 2010 02:44:33 +0100
+
+latitudeupdater (0.3-5) unstable; urgency=low
+  * some fix, support to auto update, auto stop on real-fix
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Fri, 01 Jan 2010 23:32:32 +0100
+
+latitudeupdater (0.3-1) unstable; urgency=low
+  * initial support to liblocation
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Fri, 01 Jan 2010 16:20:56 +0100
+
+latitudeupdater (0.2-2) unstable; urgency=low
+  * minor change in gui
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Tue, 29 Dec 2009 23:23:46 +0100
+
+latitudeupdater (0.2-1) unstable; urgency=low
+  * more fix...
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Tue, 29 Dec 2009 21:53:01 +0100
+
+latitudeupdater (0.2-0) unstable; urgency=low
+  * Google Maps via WebKit
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Tue, 29 Dec 2009 12:58:25 +0100
+
+latitudeupdater (0.1-4) unstable; urgency=low
+  * add libgconf2-dev depend... why?
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Wed, 16 Dec 2009 19:08:20 +0100
+
+latitudeupdater (0.1-3) unstable; urgency=low
+  * fix depend from libqt4-dev to libqt4-maemo5-dev
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Wed, 16 Dec 2009 16:35:12 +0100
+
+latitudeupdater (0.1-2) unstable; urgency=low
+  * fix section
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Wed, 16 Dec 2009 15:34:52 +0100
+
+latitudeupdater (0.1-1) unstable; urgency=low
+  * Initial release
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Tue, 15 Dec 2009 20:42:16 +0100

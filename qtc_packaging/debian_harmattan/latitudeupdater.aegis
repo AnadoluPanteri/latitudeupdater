@@ -1,0 +1,6 @@
+<aegis>
+	<request policy="add">
+		<credential name="Location" />
+		<for path="/opt/linfati.com/bin/latitudeupdater" />
+	</request>
+</aegis>
