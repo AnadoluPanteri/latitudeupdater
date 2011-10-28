@@ -3,7 +3,7 @@ Encoding=UTF-8
 Version=1.0
 Type=Application
 Terminal=false
-Name=latitudeupdater
+Name=Latitude
 Exec=/usr/bin/invoker --type=e -s /opt/linfati.com/bin/latitudeupdater
 Icon=/usr/share/icons/hicolor/80x80/apps/latitudeupdater80.png
 X-Window-Icon=
