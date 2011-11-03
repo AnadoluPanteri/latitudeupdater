@@ -185,7 +185,11 @@ Page {
                         qsTr(" Acc: ") + gps.getCurrentAccuracy().toFixed(1)
             }
         }
+        Component.onCompleted: {
+            latitude.getAccess()
+        }
     }
+
 
     Component {
         id: login

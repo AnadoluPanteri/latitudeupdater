@@ -34,17 +34,13 @@ Q_DECL_EXPORT int main(int argc, char *argv[]) {
     QCoreApplication::setOrganizationDomain("linfati.com");
     QCoreApplication::setApplicationName("latitudeupdater");
 
-    viewer->installEventFilter(new EventFilter);
+    viewer->installEventFilter(new EventFilter());
     viewer->rootContext()->setContextProperty("gps", new GpsControl);
     viewer->rootContext()->setContextProperty("latitude", new GoogleLatitude);
 
     viewer->setOrientation(QmlApplicationViewer::ScreenOrientationAuto);
     viewer->setMainQmlFile(QLatin1String("qml/latitudeupdater/main.qml"));
     viewer->showExpanded();
-
-    qobject_cast<GoogleLatitude *>(
-                qvariant_cast<QObject *>(
-                    viewer->rootContext()->contextProperty("latitude")))->getAccess();
 
     return app->exec();
 }

@@ -4,7 +4,7 @@ Version=1.0
 Type=Application
 Terminal=false
 Name=Latitude
-Exec=/usr/bin/invoker --type=e -s /opt/linfati.com/bin/latitudeupdater
+Exec=/usr/bin/invoker --type=d -s /opt/linfati.com/bin/latitudeupdater
 Icon=/usr/share/icons/hicolor/80x80/apps/latitudeupdater80.png
 X-Window-Icon=
 X-HildonDesk-ShowInToolbar=true

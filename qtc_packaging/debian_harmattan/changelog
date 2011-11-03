@@ -1,3 +1,8 @@
+latitudeupdater (0.8.2) unstable; urgency=low
+  * fix qdeclarative-boostable
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Thu, 03 Nov 2011 22:44:18 +0100
+
 latitudeupdater (0.8.1) unstable; urgency=low
   * apps.formeego.org version
 
