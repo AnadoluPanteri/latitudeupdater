@@ -1,3 +1,8 @@
+latitudeupdater (0.8.3) unstable; urgency=low
+  * report on log "gotfix" and limit counter to 9
+
+ -- Rodrigo Linfati <rodrigo@linfati.cl>  Wed, 23 Nov 2011 00:34:50 +0100
+
 latitudeupdater (0.8.2) unstable; urgency=low
   * fix qdeclarative-boostable
 

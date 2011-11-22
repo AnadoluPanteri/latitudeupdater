@@ -173,6 +173,11 @@ Page {
                                             gps.getCurrentLongitude(),
                                             gps.getCurrentAccuracy())
                 latitude.sendCurrentLocation()
+                gps_string5.text = gps_string4.text
+                gps_string4.text = gps_string3.text
+                gps_string3.text = gps_string2.text
+                gps_string2.text = gps_string1.text
+                gps_string1.text = qsTr("Updating... ")
             }
             onGotUpdate: {
                 gps_string5.text = gps_string4.text

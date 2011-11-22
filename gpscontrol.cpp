@@ -125,6 +125,7 @@ unsigned int GpsControl::getCurrentTimestamp() {
 unsigned int GpsControl::getCount() {
     qDebug() << "* GpsControl::getCount";
     static unsigned int i = 0;
+    if (i == 9) i = 0;
     return ++i;
 }
 
